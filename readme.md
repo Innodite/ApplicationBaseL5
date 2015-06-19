@@ -1,23 +1,42 @@
-## Laravel PHP Framework
+Aplicacion de Laravel 5 Base realizada por la empresa Innodite con las siguientes Caracteristicas
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+1) Multi Idioma con tan solo cambiar en el archivo /config/app.php podras visualizar la aplicacion   
+    'locale' => 'es', en espanol
+    'locale' => 'en', en ingles
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+2) Footer Integrado
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+3) en la carpeta /public/css se encuentran los Archivos css Base
+con esto Podras modificar:
+ - Estilos del Menu
+ - Estilos del Footer
+ - Estilos de los Paneles 
 
-## Official Documentation
+4) Tablas Responsivas
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+5) DataTables Integrados
 
-## Contributing
+6) CRUD de usuarios donde podra crear:
+    - Usuarios Administradores y Usuarios Comunes si ha ingresado al sistema como Administrador
+    - Usuarios Comunes si no ha ingresado al sistema o si no es Administrador
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Para ingresar como usuario administrador puede modificar el archivo /database/seeds/AdminTableSeeder.php
+colocar sus datos respectivos y ejecutar en consola en la carpeta de su proyecto
 
-### License
+php artisan migrate:reset --seed
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+esto a su vez tambien le creara en sistema usuarios de prueba.
+
+7) Control de acceso al modulo de usuarios
+
+8) Herramienta para Generar CRUD (Scaffold) Modificado por Nosotros en Base a un Proyecto ya existente
+
+Aqui esta su Documentacion 
+
+https://github.com/Innodite/laravel5-scaffold
+
+Cualquier duda 
+
+anthonyfilgueira@hotmail.com
+
+Saludos
