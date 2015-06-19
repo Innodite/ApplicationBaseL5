@@ -17,10 +17,15 @@ con esto Podras modificar:
 5) DataTables Integrados
 
 6) CRUD de usuarios donde podra crear:
-    - Usuarios Administradores y Usuarios Comunes si ha ingresado al sistema como Administrador
-    - Usuarios Comunes si no ha ingresado al sistema o si no es Administrador
 
-Para ingresar como usuario administrador puede modificar el archivo /database/seeds/AdminTableSeeder.php
+- Usuarios Administradores y Comunes si ha ingresado al sistema como Administrador
+
+- Usuarios Comunes si no ha ingresado al sistema o si no es Administrador
+
+Para ingresar como usuario administrador puede modificar el archivo
+ 
+/database/seeds/AdminTableSeeder.php
+
 colocar sus datos respectivos y ejecutar en consola en la carpeta de su proyecto
 
 php artisan migrate:reset --seed
